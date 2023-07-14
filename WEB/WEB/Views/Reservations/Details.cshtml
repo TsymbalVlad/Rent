@@ -1,0 +1,32 @@
+﻿@model WEB.Entity.Reservation
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div class="f" style="margin-left: 200px; margin-right: 200px;">
+    <b style="font-size: 40px">Details</b>
+<div>
+    <h4>Reservation</h4>
+    <hr />
+        <dl class="row">
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.status_id)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.status_id)
+            </dd>
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.status_name)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.status_name)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.status_id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
+</div>

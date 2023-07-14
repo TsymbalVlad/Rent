@@ -1,0 +1,32 @@
+﻿@model WEB.Entity.BodyType
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div style="margin-left: 200px; margin-right: 200px;">
+    <b style="font-size: 40px">Details</b>
+
+<div>
+    <h4>BodyType</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.body_id)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.body_id)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.body_name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.body_name)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.body_id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
+</div>
