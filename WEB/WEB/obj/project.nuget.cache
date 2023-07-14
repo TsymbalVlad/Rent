@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3fhLsDvVjY4lRMFhwaK+5nOujEC6uz/IqWPqTbxiSvbvTHvTo+DtdTWUN5bEAklq+BwJXLw5oOIpFavU/kHsDg==",
+  "dgSpecHash": "rI2UnP3LEEBnbcsMPdeKBVcZpriyN2ujMliHXVemdEbGpb0/QjirjE6TJJF8hyWaW0OQoS7z4dGpMb1WMy8jtA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\vlad.tsymbal\\Desktop\\Car Rental\\WEB\\WEB\\WEB.csproj",
+  "projectFilePath": "C:\\Users\\vlad.tsymbal\\Desktop\\Rent-main\\WEB\\WEB\\WEB.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vlad.tsymbal\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\vlad.tsymbal\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

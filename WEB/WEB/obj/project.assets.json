@@ -12145,11 +12145,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\vlad.tsymbal\\Desktop\\Car Rental\\WEB\\WEB\\WEB.csproj",
+      "projectUniqueName": "C:\\Users\\vlad.tsymbal\\Desktop\\Rent-main\\WEB\\WEB\\WEB.csproj",
       "projectName": "WEB",
-      "projectPath": "C:\\Users\\vlad.tsymbal\\Desktop\\Car Rental\\WEB\\WEB\\WEB.csproj",
+      "projectPath": "C:\\Users\\vlad.tsymbal\\Desktop\\Rent-main\\WEB\\WEB\\WEB.csproj",
       "packagesPath": "C:\\Users\\vlad.tsymbal\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\vlad.tsymbal\\Desktop\\Car Rental\\WEB\\WEB\\obj\\",
+      "outputPath": "C:\\Users\\vlad.tsymbal\\Desktop\\Rent-main\\WEB\\WEB\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\vlad.tsymbal\\AppData\\Roaming\\NuGet\\NuGet.Config",
