@@ -1,8 +1,8 @@
 ﻿@model List<WEB.Models.CarOrder>
 
-@{
-    ViewData["Title"] = "Profile";
-}
+    @{
+        ViewData["Title"] = "Profile";
+    }
 
     <style>
         .card {
@@ -10,11 +10,11 @@
             overflow: hidden;
         }
     </style>
-<div class="container">
-    <h1 class="text-center" style="color: gray;">Order History: </h1>
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-        @foreach (var ord in Model)
-        {
+    <div class="container">
+        <h1 class="text-center" style="color: gray;">Order History: </h1>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            @foreach (var ord in Model)
+            {
                 <div class="col">
                     <div class="card shadow-lg h-100">
                         <img src="@ord.imagepath" alt="Car Photo" class="card-img-top">
@@ -27,30 +27,38 @@
                                 <li class="list-group-item">Transmission: @ord.transmission_name</li>
                                 <li class="list-group-item">Start: @ord.start_day</li>
                                 <li class="list-group-item">End: @ord.end_day</li>
-                            @if (ord.status_id == 2)
-                            {
-                                <li class="list-group-item text-success">Status: Approved</li>
-                                @if (ord.end_day > DateTime.Now)
-                            {
-                                <b style="font-size: 17px;" class="list-group-item text-success">Active</b>
-                            }
-                            else
-                            {
-                                <b style="font-size: 17px;" class="list-group-item text-danger">Not Active</b>
-                            }
-                            }
-                            else if (ord.status_id == 1)
-                            {
-                                <li class="list-group-item text-danger">Status: In processing</li>
-                            }
-                        </ul>
-                        
-                    </div>
-                    <div class="card-footer">
-                        <span class="text-muted">Order price: $@ord.total_price</span>
+                                @if (ord.status_id == 2)
+                                {
+                                    <li class="list-group-item text-success">Status: Approved</li>
+                                    @if (ord.end_day > DateTime.Now)
+                                    {
+                                        <b style="font-size: 17px;" class="list-group-item text-success">Active</b>
+                                    }
+                                    else
+                                    {
+                                        <b style="font-size: 17px;" class="list-group-item text-danger">Not Active</b>
+                                    }
+                                }
+                                else if (ord.status_id == 1)
+                                {
+                                    <li class="list-group-item text-danger">Status: In processing</li>
+                                }
+                                else if (ord.status_id == 3)
+                                {
+                                    <li class="list-group-item text-danger">Status: Declined</li>
+                                }
+                                else if (ord.status_id == 4)
+                                {
+                                    <li class="list-group-item text-danger">Status: Canceled</li>
+                                }
+                            </ul>
+
+                        </div>
+                        <div class="card-footer">
+                            <span class="text-muted">Order price: $@ord.total_price</span>
+                        </div>
                     </div>
                 </div>
-            </div>
-        }
+            }
+        </div>
     </div>
-</div>
