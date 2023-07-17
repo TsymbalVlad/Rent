@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "KJnxwaEvAVj2iPnlx5gyOT4/UIZNXUHFtWp2+Zq/cZQ=",
+  "Hash": "XKt1mnQeh+9okrvXpctxWrjrdPkgryyA43z5oF8+ey0=",
   "Source": "WEB",
   "BasePath": "_content/WEB",
   "Mode": "Default",
@@ -117,23 +117,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\banner.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\vlad.tsymbal\\Desktop\\Rent-main\\WEB\\WEB\\wwwroot\\images\\battery.png",
-      "SourceId": "WEB",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\vlad.tsymbal\\Desktop\\Rent-main\\WEB\\WEB\\wwwroot\\",
-      "BasePath": "_content/WEB",
-      "RelativePath": "images/battery.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\battery.png"
     },
     {
       "Identity": "C:\\Users\\vlad.tsymbal\\Desktop\\Rent-main\\WEB\\WEB\\wwwroot\\images\\car1.jpg",
@@ -306,6 +289,23 @@
       "OriginalItemSpec": "wwwroot\\images\\fuel.png"
     },
     {
+      "Identity": "C:\\Users\\vlad.tsymbal\\Desktop\\Rent-main\\WEB\\WEB\\wwwroot\\images\\rent.png",
+      "SourceId": "WEB",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\vlad.tsymbal\\Desktop\\Rent-main\\WEB\\WEB\\wwwroot\\",
+      "BasePath": "_content/WEB",
+      "RelativePath": "images/rent.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\rent.png"
+    },
+    {
       "Identity": "C:\\Users\\vlad.tsymbal\\Desktop\\Rent-main\\WEB\\WEB\\wwwroot\\images\\salon.jpg",
       "SourceId": "WEB",
       "SourceType": "Discovered",
@@ -323,23 +323,6 @@
       "OriginalItemSpec": "wwwroot\\images\\salon.jpg"
     },
     {
-      "Identity": "C:\\Users\\vlad.tsymbal\\Desktop\\Rent-main\\WEB\\WEB\\wwwroot\\images\\user.png",
-      "SourceId": "WEB",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\vlad.tsymbal\\Desktop\\Rent-main\\WEB\\WEB\\wwwroot\\",
-      "BasePath": "_content/WEB",
-      "RelativePath": "images/user.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\user.png"
-    },
-    {
       "Identity": "C:\\Users\\vlad.tsymbal\\Desktop\\Rent-main\\WEB\\WEB\\wwwroot\\images\\user_photo.png",
       "SourceId": "WEB",
       "SourceType": "Discovered",
@@ -355,23 +338,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\user_photo.png"
-    },
-    {
-      "Identity": "C:\\Users\\vlad.tsymbal\\Desktop\\Rent-main\\WEB\\WEB\\wwwroot\\images\\user_white.png",
-      "SourceId": "WEB",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\vlad.tsymbal\\Desktop\\Rent-main\\WEB\\WEB\\wwwroot\\",
-      "BasePath": "_content/WEB",
-      "RelativePath": "images/user_white.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\user_white.png"
     },
     {
       "Identity": "C:\\Users\\vlad.tsymbal\\Desktop\\Rent-main\\WEB\\WEB\\wwwroot\\js\\site.js",

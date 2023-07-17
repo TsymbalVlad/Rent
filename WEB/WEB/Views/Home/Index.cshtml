@@ -12,8 +12,8 @@
         <a class="btn btn-info btn-lg align-self-start wow fadeInRight" data-wow-delay="1s" asp-area="" asp-controller="Car" asp-action="Cars" role="button">View Cars</a>
     </div>
 </div>
-<div class="mt-4 wow fadeInUp" style="display: flex; flex-direction: column; align-items: center; text-align: center;" data-wow-delay="2s">
-    <h1 style="color: gray;">Recomended for you</h1>
+<div class="mt-4 wow fadeInUp" style="display: flex; flex-direction: column; align-items: center; text-align: center;" data-wow-delay="1.5s">
+    <h1 style="color: gray;">Recommended for you</h1>
     <p style="color: darkgray;">Driving your dreams to reality with an exquisite fleet of versatile vehicles for unforgettable journeys.</p>
 </div>
 
@@ -21,11 +21,11 @@
     <div class="row">
         @try
         {
-            foreach (var cars in Model)
+            @foreach (var cars in Model)
             {
-                <div class="col-sm-4 shadow-lg wow fadeInUp" data-wow-delay="3s">
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4 wow fadeInUp" data-wow-delay="2s">
                     <div class="card">
-                        <img src=@cars.imagepath class="card-img-top" alt="Car 1" style="width: 100%; height: 350px; object-fit: cover;">
+                        <img src="@cars.imagepath" class="card-img-top" alt="Car 1" style="width: 100%; height: 350px; object-fit: cover;">
                         <div class="card-body">
                             <h5 class="card-title">@cars.car_name</h5>
                             <p class="card-text">Transmission: @cars.transmission_name</p>
@@ -42,7 +42,7 @@
         }
         catch
         {
-            
+
         }
     </div>
 </div>
@@ -52,13 +52,13 @@
         background-image: url(/images/banner.jpg);
         background-size: cover;
         background-position: center;
-        height: 600px; /* Высота баннера */
+        height: 600px; /* Height of the banner */
     }
 
     .jumbotron {
         position: absolute;
         top: 30%;
-        left: 100px; /* Отступ слева */
+        left: 10%; /* Left margin */
         transform: translate(0, -50%);
         color: #ffffff;
     }
@@ -68,6 +68,17 @@
         margin-left: 20px;
         margin-right: 20px;
         max-height: 600px;
-        overflow: hidden;
+    }
+
+    .col-md-4 {
+        /* Adjust the width of the cards for medium screens */
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+    }
+
+    .col-sm-6 {
+        /* Adjust the width of the cards for small screens */
+        flex: 0 0 50%;
+        max-width: 50%;
     }
 </style>
