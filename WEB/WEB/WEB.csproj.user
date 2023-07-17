@@ -14,6 +14,5 @@
     <WebStackScaffolding_DbContextTypeFullName>WEB.Models.AppDBContext</WebStackScaffolding_DbContextTypeFullName>
     <WebStackScaffolding_IsAsyncSelected>False</WebStackScaffolding_IsAsyncSelected>
     <WebStackScaffolding_IsViewGenerationSelected>True</WebStackScaffolding_IsViewGenerationSelected>
-    <NameOfLastUsedPublishProfile>C:\Users\vlad.tsymbal\Desktop\Rent-main\WEB\WEB\Properties\PublishProfiles\vladtsymbal-001-site1 - Web Deploy.pubxml</NameOfLastUsedPublishProfile>
   </PropertyGroup>
 </Project>
