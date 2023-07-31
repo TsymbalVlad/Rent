@@ -12283,19 +12283,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\vlad.tsymbal\\.nuget\\packages\\": {}
+    "C:\\Users\\tsymb\\.nuget\\packages\\": {},
+    "D:\\SDK\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\vlad.tsymbal\\Desktop\\WEBB\\WEB\\WEB\\WEB.csproj",
+      "projectUniqueName": "C:\\Users\\tsymb\\Desktop\\Rent-main\\WEBB\\WEB\\WEB\\WEB.csproj",
       "projectName": "WEB",
-      "projectPath": "C:\\Users\\vlad.tsymbal\\Desktop\\WEBB\\WEB\\WEB\\WEB.csproj",
-      "packagesPath": "C:\\Users\\vlad.tsymbal\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\vlad.tsymbal\\Desktop\\WEBB\\WEB\\WEB\\obj\\",
+      "projectPath": "C:\\Users\\tsymb\\Desktop\\Rent-main\\WEBB\\WEB\\WEB\\WEB.csproj",
+      "packagesPath": "C:\\Users\\tsymb\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\tsymb\\Desktop\\Rent-main\\WEBB\\WEB\\WEB\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "D:\\SDK\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\vlad.tsymbal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\tsymb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -12303,7 +12308,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\sdk\\7.0.304\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -12388,7 +12393,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   },
@@ -12397,7 +12402,7 @@
       "code": "NU1608",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Detected package version outside of dependency constraint: MediatR.Extensions.Microsoft.DependencyInjection 11.1.0 requires MediatR (>= 11.0.0 && < 12.0.0) but version MediatR 12.1.1 was resolved.",
+      "message": "Версия обнаруженного пакета нарушает ограничение зависимости: MediatR.Extensions.Microsoft.DependencyInjection 11.1.0 требуется MediatR (>= 11.0.0 && < 12.0.0), но в результате разрешения получена версия MediatR 12.1.1.",
       "libraryId": "MediatR",
       "targetGraphs": [
         "net7.0"

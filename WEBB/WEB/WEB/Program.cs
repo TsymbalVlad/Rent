@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Hosting;
+﻿using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using System.Configuration;
@@ -57,11 +57,70 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+
 app.UseAuthentication();
 app.UseAuthorization();
 
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+app.UseEndpoints(endpoints =>
+{
+	endpoints.MapControllerRoute(
+		name: "default",
+		pattern: "{controller=Home}/{action=Index}/{id?}");
+
+	endpoints.MapControllerRoute(
+		name: "carFallback",
+		pattern: "Car/{*path}",
+		defaults: new { controller = "Car", action = "Cars" });
+
+	endpoints.MapControllerRoute(
+		name: "accountFallback",
+		pattern: "Account/{*path}",
+		defaults: new { controller = "Account", action = "Profile" });
+    
+    endpoints.MapControllerRoute(
+		name: "carsFallback",
+		pattern: "Cars/{*path}",
+		defaults: new { controller = "Cars", action = "IndexCar" });
+	
+	endpoints.MapControllerRoute(
+		name: "cartypesFallback",
+		pattern: "CarTypes/{*path}",
+		defaults: new { controller = "CarTypes", action = "IndexCarType" });
+	
+	endpoints.MapControllerRoute(
+		name: "transmissionsFallback",
+		pattern: "Transmissions/{*path}",
+		defaults: new { controller = "Transmissions", action = "IndexTransmission" });
+	
+	endpoints.MapControllerRoute(
+		name: "reservationsFallback",
+		pattern: "Reservations/{*path}",
+		defaults: new { controller = "Reservations", action = "IndexRes" });
+	
+	endpoints.MapControllerRoute(
+		name: "fuelFallback",
+		pattern: "Fuels/{*path}",
+		defaults: new { controller = "Fuels", action = "IndexFuel" });
+	
+	endpoints.MapControllerRoute(
+		name: "drive_typeFallback",
+		pattern: "Drive_type/{*path}",
+		defaults: new { controller = "Drive_type", action = "IndexDriveType" });
+	
+	endpoints.MapControllerRoute(
+		name: "bodytypesFallback",
+		pattern: "BodyTypes/{*path}",
+		defaults: new { controller = "BodyTypes", action = "IndexCarBody" });	
+
+	endpoints.MapControllerRoute(
+		name: "ordersFallback",
+		pattern: "Orders/{*path}",
+		defaults: new { controller = "Orders", action = "IndexOrder" });
+
+	endpoints.MapFallbackToController("Index", "Home");
+});
+
+
+
 
 app.Run();

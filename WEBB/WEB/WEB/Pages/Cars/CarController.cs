@@ -6,6 +6,8 @@ using Microsoft.EntityFrameworkCore;
 using WEB.Pages.Cars.Queryes;
 using WEB.Pages.OrderPage.Commands;
 using WEB.Pages.OrderPage.Models;
+using System.Net;
+using System.Net.Mail;
 
 namespace WEB.Pages.Cars
 {
@@ -87,6 +89,8 @@ namespace WEB.Pages.Cars
                 return RedirectToAction("Login", "Account");
             }
 
+
+
             var user = await _userManager.GetUserAsync(User);
 
             var order = new Order
@@ -99,11 +103,11 @@ namespace WEB.Pages.Cars
                 car_id = carId,
                 total_price = (endDateTime.Date - startDateTime.Date).Days * price
             };
+                
+                await _mediator.Send(new AddOrderCommand(order));
 
-            await _mediator.Send(new AddOrderCommand(order));
-
-            return RedirectToAction("Profile", "Account");
-        }
+                return RedirectToAction("Profile", "Account");
+            }
 
     }
 }

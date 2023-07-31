@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\vlad.tsymbal\\Desktop\\WEBB\\WEB\\WEB\\WEB.csproj": {}
+    "C:\\Users\\tsymb\\Desktop\\Rent-main\\WEBB\\WEB\\WEB\\WEB.csproj": {}
   },
   "projects": {
-    "C:\\Users\\vlad.tsymbal\\Desktop\\WEBB\\WEB\\WEB\\WEB.csproj": {
+    "C:\\Users\\tsymb\\Desktop\\Rent-main\\WEBB\\WEB\\WEB\\WEB.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vlad.tsymbal\\Desktop\\WEBB\\WEB\\WEB\\WEB.csproj",
+        "projectUniqueName": "C:\\Users\\tsymb\\Desktop\\Rent-main\\WEBB\\WEB\\WEB\\WEB.csproj",
         "projectName": "WEB",
-        "projectPath": "C:\\Users\\vlad.tsymbal\\Desktop\\WEBB\\WEB\\WEB\\WEB.csproj",
-        "packagesPath": "C:\\Users\\vlad.tsymbal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vlad.tsymbal\\Desktop\\WEBB\\WEB\\WEB\\obj\\",
+        "projectPath": "C:\\Users\\tsymb\\Desktop\\Rent-main\\WEBB\\WEB\\WEB\\WEB.csproj",
+        "packagesPath": "C:\\Users\\tsymb\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tsymb\\Desktop\\Rent-main\\WEBB\\WEB\\WEB\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\SDK\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\vlad.tsymbal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\tsymb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,7 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\sdk\\7.0.304\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -107,7 +111,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

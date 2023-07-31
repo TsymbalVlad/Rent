@@ -11,11 +11,13 @@ using WEB.Pages.Cars.Models;
 using WEB.Pages.Cars.Queryes;
 using WEB.Pages.Reservation.Queryes;
 using WEB.Pages.Cars.Commdns;
-
+using System.Data;
+using Microsoft.AspNetCore.Authorization;
 
 namespace WEB.Pages.Cars
 {
-    public class CarsController : Controller
+	[Authorize(Roles = "Admin")]
+	public class CarsController : Controller
     {
         private readonly IMediator _mediator;
         private readonly IAppCache _cache;
